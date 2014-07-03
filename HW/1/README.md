@@ -23,15 +23,17 @@ There are 30 marks available and are awarded grades as follows:
 ###1 - Why do we represent data using binary when using computers *(1 mark)*
 
 ```
-answer here
+Because computers only undersand two states on and off.
 ```
 ###2 - How would we represent the number 147 in binary? *(1 mark)*
 ```
-answer here
+11001001
 ```
 ###3 - Can you convert the hexadecimal number **b5** to denary, there is a mark for you working. *(2 marks)*
 ```
-answer here
+b = 11 = 1101
+5 = 1010
+b5 = 11011010
 ```
 ###4 - Here is a function written is **pseudocode**.
 ```
@@ -47,12 +49,12 @@ ENDFUNCTION
 
 (a) What type of data is **users**? **(1 mark)**
 ```
-answer here
+array
 ```
 
 (b) What type of data is returned by this function? **(1 mark)**
 ```
-answer here
+boolean
 ```
 
 ##Errors
@@ -69,28 +71,35 @@ line7:		OUTPT mean
 
 (a) On which line is there a **syntax** error? **(1 mark)**
 ```
-answer here
+line 3
 ```
 
 (b) What is meant by a **syntax** error? **(1 mark)**
 ```
-answer here
+an error that completly stops the code from working because the computer cannot understand what it is being told.
 ```
 
 (c) Identify a logical error in the program and suggest how this might be fixed. **(2 marks)**
 ```
-answer here
+line 4 it is making the variable a different number each time. it should be: tot <- tot + num[x]
 ```
 
 (d) Describe and give an example of the 3rd kind of programming error. **(2 marks)**
 ```
-answer here
+runtime error, and error thjat stop the program working in the middle of the code. e.g putting == instead of = in an equation.
 ```
 
 ##Algortithms
 ###7 - Write an **algorithm** that if given a list of numbers could find the largest. Try to use [pseudocode](http://filestore2.aqa.org.uk/subjects/AQA-GCSE-COMPSCI-W-TRB-PSEU.PDF).
 ```
-answer here
+ bound = N-1
+    for i from 1 to N
+        newbound = 0
+        for j from 0 to bound
+           if a[j] > a[j + 1]
+              swap( a[j], a[j + 1] )
+              newbound = j - 1
+        bound = newbound
 ```
 
 ##Networking
@@ -98,27 +107,27 @@ answer here
 
 **Bus Topology (6 marks)**
 ```
-Describe:
+Describe: were all the devices are all connected by one cable or 'backbone'
 
-Advantages:
+Advantages: easy to stepup
 
-Disadvantages:
+Disadvantages: if the main cabel gets damaged the whole network goes down
 ```
 
 **Ring Topology (6 marks)**
 ```
-Describe:
+Describe: each device is connected to two others forming a ring
 
-Advantages:
+Advantages: fast to transfer data
 
-Disadvantages:
+Disadvantages: if any device is faulty the whole network goes down.
 ```
 
 **Star Topology (6 marks)**
 ```
-Describe:
+Describe: all the devices are connected to one centeral hub by seperate cables.
 
-Advantages:
+Advantages: very reliable it is not very easy to break.
 
-Disadvantages:
+Disadvantages: expensive to set up.
 ```
